@@ -1,16 +1,4 @@
-# Node
 node_modules/
-package-lock.json
-yarn.lock
-
-# CocoaPods
-ios/Pods/
-ios/Podfile.lock
-
-# Xcode
-ios/VoltuosoApp.xcworkspace/
-ios/build/
+*.xcuserstate
+*.xcuserdata/
 DerivedData/
-
-# Bundler
-Gemfile.lock

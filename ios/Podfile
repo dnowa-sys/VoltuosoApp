@@ -1,32 +1,21 @@
 platform :ios, '16.0'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 
-# ENV['RCT_NEW_ARCH_ENABLED'] ||= '0'
-
 target 'VoltuosoApp' do
   config = use_native_modules!
 
   use_react_native!(
-    # this is where you flip Hermes and New-Architecture
-    :path => config[:reactNativePath],
-    :hermes_enabled => fals,           # or true if you want Hermes
-    # :new_architecture_enabled => false, # or true if you’re ready for Turbo/Fabric
-    :fabric_enabled => false            # only if you want RN Fabric
+    :path               => config[:reactNativePath],
+    :hermes_enabled     => true,   # ← turn Hermes on
   )
 
-  # your extra pods
-  pod 'react-native-maps', path: '../node_modules/react-native-maps'
-  pod 'react-native-google-maps', path: '../node_modules/react-native-maps'
-  pod 'React-Codegen', :path => "#{config[:reactNativePath]}/React/React-Codegen"
-  pod 'FBReactNativeSpec', :path => "#{config[:reactNativePath]}/React/FBReactNativeSpec"
-
+  # Exclude arm64 on the simulator so x86_64 builds succeed
   post_install do |installer|
-    react_native_post_install(installer)
+    react_native_post_install(installer, config[:reactNativePath])
 
-    # exclude arm64 on Simulator to avoid the x86_64/arm64 mixup
-    installer.pods_project.targets.each do |t|
-      t.build_configurations.each do |c|
-        c.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |build_config|
+        build_config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
       end
     end
   end

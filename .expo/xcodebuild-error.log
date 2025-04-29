@@ -1,0 +1,10 @@
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:60F6F3FE-5658-4045-9343-F4D6FE614453, OS:18.4, name:iPhone 16 Pro }
+{ platform:iOS Simulator, arch:x86_64, id:60F6F3FE-5658-4045-9343-F4D6FE614453, OS:18.4, name:iPhone 16 Pro }
+** BUILD FAILED **
+
+
+The following build commands failed:
+	ScanDependencies /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/VoltuosoApp_vers.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'VoltuosoApp' from project 'VoltuosoApp')
+	Building workspace VoltuosoApp with scheme VoltuosoApp and configuration Debug
+(2 failures)

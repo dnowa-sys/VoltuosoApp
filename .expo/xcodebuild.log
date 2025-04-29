@@ -1,0 +1,562 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp.xcworkspace -configuration Debug -scheme VoltuosoApp -destination id=60F6F3FE-5658-4045-9343-F4D6FE614453
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  leveldb: https://github.com/firebase/leveldb.git @ 1.22.5
+  GoogleDataTransport: https://github.com/google/GoogleDataTransport.git @ 10.1.0
+  InteropForGoogle: https://github.com/google/interop-ios-for-google-sdks.git @ 101.0.0
+  swift-numerics: https://github.com/apple/swift-numerics.git @ 1.0.3
+  swift-algorithms: https://github.com/apple/swift-algorithms.git @ 1.2.1
+  abseil: https://github.com/google/abseil-cpp-binary.git @ 1.2024072200.0
+  AppCheck: https://github.com/google/app-check.git @ 11.2.0
+  GTMSessionFetcher: https://github.com/google/gtm-session-fetcher.git @ 4.4.0
+  GoogleUtilities: https://github.com/google/GoogleUtilities.git @ 8.0.2
+  Promises: https://github.com/google/promises.git @ 2.4.0
+  nanopb: https://github.com/firebase/nanopb.git @ 2.30910.0
+  SwiftProtobuf: https://github.com/apple/swift-protobuf.git @ 1.29.0
+  gRPC: https://github.com/google/grpc-binary.git @ 1.69.0
+  GoogleAppMeasurement: https://github.com/google/GoogleAppMeasurement.git @ 11.12.0
+  Firebase: https://github.com/firebase/firebase-ios-sdk @ 11.12.0
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (65 targets)
+    Target 'VoltuosoApp' in project 'VoltuosoApp'
+        ➜ Explicit dependency on target 'Algorithms' in project 'swift-algorithms'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWithoutAdIdSupport' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsOnDeviceConversion' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppCheck' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalytics' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppDistribution-Beta' in project 'Firebase'
+    Target 'FirebaseAppDistribution-Beta' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppDistributionTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppDistribution' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+    Target 'FirebaseAppDistributionTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppDistribution' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+    Target 'FirebaseAppDistribution' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+    Target 'FirebaseAnalytics' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurement' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'FirebaseAnalyticsTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurement' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'FirebaseAnalyticsWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurement' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'GoogleAppMeasurement' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementTarget' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'GoogleAppMeasurementTarget' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'FirebaseAppCheck' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppCheck' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppCheckInterop' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'AppCheckCore' in project 'AppCheck'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+    Target 'FirebaseAppCheck' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAppCheckInterop' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'AppCheckCore' in project 'AppCheck'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+    Target 'AppCheckCore' in project 'AppCheck'
+        ➜ Explicit dependency on target 'AppCheckCore' in project 'AppCheck'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+    Target 'AppCheckCore' in project 'AppCheck'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+    Target 'FirebaseAppCheckInterop' in project 'Firebase' (no dependencies)
+    Target 'FirebaseAnalyticsOnDeviceConversion' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsOnDeviceConversionTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementOnDeviceConversion' in project 'GoogleAppMeasurement'
+    Target 'FirebaseAnalyticsOnDeviceConversionTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementOnDeviceConversion' in project 'GoogleAppMeasurement'
+    Target 'GoogleAppMeasurementOnDeviceConversion' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementOnDeviceConversionTarget' in project 'GoogleAppMeasurement'
+    Target 'GoogleAppMeasurementOnDeviceConversionTarget' in project 'GoogleAppMeasurement' (no dependencies)
+    Target 'FirebaseAnalyticsWithoutAdIdSupport' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWithoutAdIdSupportTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWithoutAdIdSupportWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementWithoutAdIdSupport' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'FirebaseAnalyticsWithoutAdIdSupportTarget' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseAnalyticsWithoutAdIdSupportWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementWithoutAdIdSupport' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'FirebaseAnalyticsWithoutAdIdSupportWrapper' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementWithoutAdIdSupport' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'GoogleAppMeasurementWithoutAdIdSupport' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GoogleAppMeasurementWithoutAdIdSupportTarget' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'GoogleAppMeasurementWithoutAdIdSupportTarget' in project 'GoogleAppMeasurement'
+        ➜ Explicit dependency on target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+    Target 'nanopb' in project 'nanopb'
+        ➜ Explicit dependency on target 'nanopb' in project 'nanopb'
+        ➜ Explicit dependency on target 'nanopb_nanopb' in project 'nanopb'
+    Target 'nanopb' in project 'nanopb'
+        ➜ Explicit dependency on target 'nanopb_nanopb' in project 'nanopb'
+    Target 'nanopb_nanopb' in project 'nanopb' (no dependencies)
+    Target 'GULNetwork' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Network' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Network' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Reachability' in project 'GoogleUtilities'
+    Target 'GULMethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-MethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-MethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-MethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-MethodSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-MethodSwizzler' in project 'GoogleUtilities' (no dependencies)
+    Target 'GULAppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-AppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-AppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Reachability' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Network' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-AppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-AppDelegateSwizzler' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Reachability' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Network' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-Network' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Network' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Reachability' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-Network' in project 'GoogleUtilities' (no dependencies)
+    Target 'GoogleUtilities-Reachability' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Reachability' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-Reachability' in project 'GoogleUtilities' (no dependencies)
+    Target 'GoogleUtilities_GoogleUtilities-AppDelegateSwizzler' in project 'GoogleUtilities' (no dependencies)
+    Target 'FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase_FirebaseInstallations' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'GULUserDefaults' in project 'GoogleUtilities'
+    Target 'GULUserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-UserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-UserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-UserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-UserDefaults' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-UserDefaults' in project 'GoogleUtilities' (no dependencies)
+    Target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'Promises_FBLPromises' in project 'Promises'
+    Target 'FBLPromises' in project 'Promises'
+        ➜ Explicit dependency on target 'Promises_FBLPromises' in project 'Promises'
+    Target 'Promises_FBLPromises' in project 'Promises' (no dependencies)
+    Target 'Firebase_FirebaseInstallations' in project 'Firebase' (no dependencies)
+    Target 'FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase_FirebaseCore' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase' in project 'Firebase'
+        ➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GULLogger' in project 'GoogleUtilities'
+    Target 'GULLogger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Logger' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-Logger' in project 'GoogleUtilities' (no dependencies)
+    Target 'GULEnvironment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-Environment' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'third-party-IsAppEncrypted' in project 'GoogleUtilities'
+    Target 'third-party-IsAppEncrypted' in project 'GoogleUtilities' (no dependencies)
+    Target 'GoogleUtilities_GoogleUtilities-Environment' in project 'GoogleUtilities' (no dependencies)
+    Target 'Firebase_FirebaseCore' in project 'Firebase' (no dependencies)
+    Target 'FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'Firebase_FirebaseCoreInternal' in project 'Firebase'
+        ➜ Explicit dependency on target 'GULNSData' in project 'GoogleUtilities'
+    Target 'GULNSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-NSData' in project 'GoogleUtilities'
+    Target 'GoogleUtilities-NSData' in project 'GoogleUtilities'
+        ➜ Explicit dependency on target 'GoogleUtilities_GoogleUtilities-NSData' in project 'GoogleUtilities'
+    Target 'GoogleUtilities_GoogleUtilities-NSData' in project 'GoogleUtilities' (no dependencies)
+    Target 'Firebase_FirebaseCoreInternal' in project 'Firebase' (no dependencies)
+    Target 'Firebase' in project 'Firebase' (no dependencies)
+    Target 'Algorithms' in project 'swift-algorithms'
+        ➜ Explicit dependency on target 'Algorithms' in project 'swift-algorithms'
+        ➜ Explicit dependency on target 'RealModule' in project 'swift-numerics'
+    Target 'Algorithms' in project 'swift-algorithms'
+        ➜ Explicit dependency on target 'RealModule' in project 'swift-numerics'
+    Target 'RealModule' in project 'swift-numerics'
+        ➜ Explicit dependency on target 'RealModule' in project 'swift-numerics'
+        ➜ Explicit dependency on target '_NumericsShims' in project 'swift-numerics'
+    Target 'RealModule' in project 'swift-numerics'
+        ➜ Explicit dependency on target '_NumericsShims' in project 'swift-numerics'
+    Target '_NumericsShims' in project 'swift-numerics' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp/Images.xcassets
+
+ReadFileContents /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/docc/features.json
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 2dbb71d54c77afce59b119cd6db4a150
+Build description path: /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/XCBuildData/2dbb71d54c77afce59b119cd6db4a150.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.4-22E235-71825a6d136aa4733edcbe86ece5525b.sdkstatcache
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.4-22E235-71825a6d136aa4733edcbe86ece5525b.sdkstatcache
+Base directory status changed. Regenerating...
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.build/empty-GoogleUtilities_GoogleUtilities-Network.plist (in target 'GoogleUtilities_GoogleUtilities-Network' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.build/empty-GoogleUtilities_GoogleUtilities-Network.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.build/empty-GoogleUtilities_GoogleUtilities-UserDefaults.plist (in target 'GoogleUtilities_GoogleUtilities-UserDefaults' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.build/empty-GoogleUtilities_GoogleUtilities-UserDefaults.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.build/empty-GoogleUtilities_GoogleUtilities-NSData.plist (in target 'GoogleUtilities_GoogleUtilities-NSData' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.build/empty-GoogleUtilities_GoogleUtilities-NSData.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Promises_FBLPromises.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises_FBLPromises.build/empty-Promises_FBLPromises.plist (in target 'Promises_FBLPromises' from project 'Promises')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/promises
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises_FBLPromises.build/empty-Promises_FBLPromises.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Promises_FBLPromises.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/nanopb_nanopb.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/nanopb.build/Debug-iphonesimulator/nanopb_nanopb.build/empty-nanopb_nanopb.plist (in target 'nanopb_nanopb' from project 'nanopb')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/nanopb
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/nanopb.build/Debug-iphonesimulator/nanopb_nanopb.build/empty-nanopb_nanopb.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/nanopb_nanopb.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.build/empty-GoogleUtilities_GoogleUtilities-Logger.plist (in target 'GoogleUtilities_GoogleUtilities-Logger' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.build/empty-GoogleUtilities_GoogleUtilities-Logger.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.build/empty-GoogleUtilities_GoogleUtilities-MethodSwizzler.plist (in target 'GoogleUtilities_GoogleUtilities-MethodSwizzler' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.build/empty-GoogleUtilities_GoogleUtilities-MethodSwizzler.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.build/empty-GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.plist (in target 'GoogleUtilities_GoogleUtilities-AppDelegateSwizzler' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.build/empty-GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.build/empty-GoogleUtilities_GoogleUtilities-Environment.plist (in target 'GoogleUtilities_GoogleUtilities-Environment' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.build/empty-GoogleUtilities_GoogleUtilities-Environment.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.build/empty-GoogleUtilities_GoogleUtilities-Reachability.plist (in target 'GoogleUtilities_GoogleUtilities-Reachability' from project 'GoogleUtilities')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GoogleUtilities.build/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.build/empty-GoogleUtilities_GoogleUtilities-Reachability.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseInstallations.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseInstallations.build/empty-Firebase_FirebaseInstallations.plist (in target 'Firebase_FirebaseInstallations' from project 'Firebase')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseInstallations.build/empty-Firebase_FirebaseInstallations.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseInstallations.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.build/empty-Firebase_FirebaseCoreInternal.plist (in target 'Firebase_FirebaseCoreInternal' from project 'Firebase')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.build/empty-Firebase_FirebaseCoreInternal.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.bundle/Info.plist
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCore.bundle/Info.plist /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseCore.build/empty-Firebase_FirebaseCore.plist (in target 'Firebase_FirebaseCore' from project 'Firebase')
+    cd /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk
+    builtin-infoPlistUtility /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/Firebase_FirebaseCore.build/empty-Firebase_FirebaseCore.plist -producttype com.apple.product-type.bundle -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCore.bundle/Info.plist
+
+note: Run script build phase 'Bundle React Native code and images' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'VoltuosoApp' from project 'VoltuosoApp')
+ProcessProductPackaging "" /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "SSWP2T3N2U.org.reactjs.native.example.VoltuosoApp";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent
+
+ProcessProductPackagingDER /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent.der (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    /usr/bin/derq query -f xml -i /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp.app-Simulated.xcent.der --raw
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-UserDefaults.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-UserDefaults.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+PhaseScriptExecution [CP]\ Check\ Pods\ Manifest.lock /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Script-6E157B28A925A7555621077D.sh (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    /bin/sh -c /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Script-6E157B28A925A7555621077D.sh
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/nanopb_nanopb.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/nanopb_nanopb.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/nanopb_nanopb.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Network.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Network.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Reachability.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Promises_FBLPromises.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Promises_FBLPromises.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Promises_FBLPromises.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Logger.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-NSData.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/GoogleUtilities_GoogleUtilities-Environment.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseInstallations.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseInstallations.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseInstallations.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseCoreInternal.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCoreInternal.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+Copy /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseCore.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCore.bundle (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Firebase_FirebaseCore.bundle /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app
+
+ScanDependencies /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/VoltuosoApp_vers.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    
+    Using response file: /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    
+    builtin-ScanDependencies -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.o.scan -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.4-22E235-71825a6d136aa4733edcbe86ece5525b.sdkstatcache -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wunreachable-code -Werror\=deprecated-objc-isa-usage -Werror\=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -index-store-path /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Index.noindex/DataStore -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 -Wno-comma -Wno-shorten-64-to-32 @/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.d --serialize-diagnostics /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.dia -c /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/VoltuosoApp_vers.c -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.o -index-unit-output-path /VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_vers.o
+error: module map file '/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/Google-Maps-iOS-Utils/GoogleMapsUtils.modulemap' not found (in target 'VoltuosoApp' from project 'VoltuosoApp')
+
+SwiftDriver VoltuosoApp normal arm64 com.apple.xcode.tools.swift.compiler (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name VoltuosoApp -Onone -enforce-exclusivity\=checked @/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp.SwiftFileList -DDEBUG -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleAppMeasurementWithoutAdIdSupportTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAnalyticsWithoutAdIdSupportWrapper.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAnalyticsWithoutAdIdSupportTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleAppMeasurementOnDeviceConversionTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAnalyticsOnDeviceConversionTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppCheckCore.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAppCheckInterop.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAppCheck.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleAppMeasurementTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-MethodSwizzler.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/nanopb.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAnalyticsWrapper.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAnalyticsTarget.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-UserDefaults.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-Network.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-Reachability.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-NSData.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-Logger.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-Environment.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/third-party-IsAppEncrypted.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/GoogleUtilities-AppDelegateSwizzler.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAppDistribution.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseInstallations.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseCore.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseAppDistributionTarget.modulemap -D COCOAPODS -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/DoubleConversion/DoubleConversion.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTDeprecation/RCTDeprecation.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTFabric/React-RCTFabric.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTRuntime/React-RCTRuntime.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTTypeSafety/RCTTypeSafety.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RNReanimated/RNReanimated.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React/React-Core.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactAppDependencyProvider/ReactAppDependencyProvider.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactCodegen/ReactCodegen.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactCommon/ReactCommon.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React_Fabric/React-Fabric.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React_FabricComponents/React-FabricComponents.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React_NativeModulesApple/React-NativeModulesApple.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React_RCTAppDelegate/React-RCTAppDelegate.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/folly/RCT-Folly.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/glog/glog.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/jsi/React-jsi.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/jsinspector_modern/React-jsinspector.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/jsinspector_modern_tracing/React-jsinspectortracing.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_debug/React-debug.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_featureflags/React-featureflags.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_nativemodule_defaults/React-defaultsnativemodule.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_nativemodule_dom/React-domnativemodule.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_nativemodule_featureflags/React-featureflagsnativemodule.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_nativemodule_idlecallbacks/React-idlecallbacksnativemodule.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_nativemodule_microtasks/React-microtasksnativemodule.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_renderer_css/React-renderercss.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_renderer_debug/React-rendererdebug.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_renderer_graphics/React-graphics.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_renderer_imagemanager/React-ImageManager.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_runtime/React-jsitooling.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react_utils/React-utils.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/reacthermes/React-hermes.modulemap -Xcc -fmodule-map-file\=/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/yoga/Yoga.modulemap -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk -target arm64-apple-ios16.6-simulator -g -module-cache-path /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Index.noindex/DataStore -swift-version 5 -I /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator -F /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/hermes-engine/destroot/Library/Frameworks/universal -F /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/hermes-engine/Pre-built -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.4-22E235-71825a6d136aa4733edcbe86ece5525b.sdkstatcache -output-file-map /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp_const_extract_protocols.json -Xcc -iquote -Xcc /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp-generated-files.hmap -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp-own-target-headers.hmap -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp-a33f1285d73b572168eec75f0bfe33b1-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/VoltuosoApp-project-headers.hmap -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/swift-numerics/Sources/_NumericsShims/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWithoutAdIdSupportWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAnalyticsWithoutAdIdSupportWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWithoutAdIdSupportWrap/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleAppMeasurement/GoogleAppMeasurementOnDeviceConversionWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAnalyticsOnDeviceConversionWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/app-check/AppCheckCore/Sources/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAppCheck/Interop/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAppCheck/Sources/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/nanopb/spm_headers -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAnalyticsWrapper/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAnalyticsWrap/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/promises/Sources/FBLPromises/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Network/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/NSData+zlib/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/third_party/IsAppEncrypted/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAppDistribution/Sources/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseInstallations/Source/Library/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCore/Sources/Public -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/CoreOnly/Sources -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/SourcePackages/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseAppDistributionWrap/include -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/DoubleConversion -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/FBLazyVector -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCT-Folly -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTDeprecation -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTRequired -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RCTTypeSafety -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RNGestureHandler -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RNReanimated -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/RNScreens -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-Core -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-Fabric -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-FabricComponents -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-FabricImage -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-ImageManager -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-Mapbuffer -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-NativeModulesApple -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTAnimation -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTAppDelegate -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTBlob -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTFBReactNativeSpec -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTFabric -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTRuntime -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RCTText -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RuntimeApple -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RuntimeCore -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-RuntimeHermes -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-callinvoker -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-cxxreact -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-debug -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-defaultsnativemodule -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-domnativemodule -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-featureflags -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-featureflagsnativemodule -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-graphics -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-hermes -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-idlecallbacksnativemodule -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jserrorhandler -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jsi -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jsiexecutor -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jsinspector -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jsinspectortracing -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-jsitooling -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-logger -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-microtasksnativemodule -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-oscompat -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-perflogger -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-performancetimeline -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-rendererconsistency -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-renderercss -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-rendererdebug -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-runtimeexecutor -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-runtimescheduler -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-timing -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-utils -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactAppDependencyProvider -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactCodegen -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/ReactCommon -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/SocketRocket -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/Yoga -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/boost -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/fast_float -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/fmt -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/glog -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/hermes-engine -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react-native-geolocation -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react-native-maps -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/react-native-safe-area-context -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/DoubleConversion -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/boost -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/boost -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/boost-for-react-native -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/glog -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/RCT-Folly -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/React-hermes -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Public/hermes-engine -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/node_modules/react-native/ReactCommon -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/node_modules/react-native-reanimated/apple -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/node_modules/react-native-reanimated/Common/cpp -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Private/React-Core -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Private/React-Core -Xcc -I/Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/Pods/Headers/Private/Yoga -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources-normal/arm64 -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/arm64 -Xcc -I/Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources -Xcc -DDEBUG\=1 -Xcc -DCOCOAPODS\=1 -emit-objc-header -emit-objc-header-path /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/Objects-normal/arm64/VoltuosoApp-Swift.h -working-directory /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Info.plist /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp/Info.plist (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    builtin-infoPlistUtility /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/LaunchScreen-SBPartialInfo.plist -additionalcontentfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/assetcatalog_generated_info.plist -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseCore.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseCoreInternal.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Firebase_FirebaseInstallations.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Frameworks/FirebaseAnalytics.framework -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Frameworks/GoogleAppMeasurement.framework -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Frameworks/GoogleAppMeasurementIdentitySupport.framework -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Frameworks/GoogleAppMeasurementOnDeviceConversion.framework -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-MethodSwizzler.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Network.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/GoogleUtilities_GoogleUtilities-UserDefaults.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Promises_FBLPromises.bundle -scanforprivacyfile /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/nanopb_nanopb.bundle -o /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Products/Debug-iphonesimulator/VoltuosoApp.app/Info.plist
+
+SwiftCompile normal arm64 Compiling\ AppDelegate.swift /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp/AppDelegate.swift (in target 'VoltuosoApp' from project 'VoltuosoApp')
+SwiftCompile normal arm64 /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios/VoltuosoApp/AppDelegate.swift (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ VoltuosoApp (in target 'VoltuosoApp' from project 'VoltuosoApp')
+
+EmitSwiftModule normal arm64 (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'VoltuosoApp' from project 'VoltuosoApp')
+SwiftCompile normal arm64 /Users/danielnowakowski/Library/Developer/Xcode/DerivedData/VoltuosoApp-btyesjkxtdpbgzgisbxqwciqyyha/Build/Intermediates.noindex/VoltuosoApp.build/Debug-iphonesimulator/VoltuosoApp.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'VoltuosoApp' from project 'VoltuosoApp')
+    cd /Users/danielnowakowski/DeveloperDocs/VoltuosoApp/ios
+    
+
