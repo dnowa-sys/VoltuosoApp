@@ -3,12 +3,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'IzaSyCnBI7EleabBwbW6eN1M23tTWzJYhSrihA',
+  authDomain: 'Voltuoso.firebaseapp.com',
+  projectId: 'voltuoso-91370',
+  storageBucket: 'Voltuoso.appspot.com',
+  messagingSenderId: '601405213922',
+  appId: '1:601405213922:ios:5b28fcf3b8c01d7533e2bb',
 };
 
 const app = initializeApp(firebaseConfig);

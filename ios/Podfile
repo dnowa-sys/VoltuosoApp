@@ -1,21 +1,55 @@
 platform :ios, '16.0'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
+prepare_react_native_project!
+
+# Explicitly set this for older React Native versions
+ENV['RCT_NEW_ARCH_ENABLED'] = '0'
+
+# Handle architecture issues for Apple Silicon Macs
+# Check if running on an Apple Silicon Mac
+installer_arm64 = `/usr/bin/arch -arm64 true 2>/dev/null && echo 'arm64' || echo 'intel'`.strip == 'arm64'
 
 target 'VoltuosoApp' do
   config = use_native_modules!
-
+  
+  # React Native core
   use_react_native!(
-    :path               => config[:reactNativePath],
-    :hermes_enabled     => true,   # ← turn Hermes on
+    :path => config[:reactNativePath],
+    :hermes_enabled => true  # Using Hermes for better performance
   )
+  
+  # React Native Maps
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-maps', path: rn_maps_path
+  pod 'react-native-google-maps', path: rn_maps_path
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
 
-  # Exclude arm64 on the simulator so x86_64 builds succeed
   post_install do |installer|
-    react_native_post_install(installer, config[:reactNativePath])
-
+    # Apply post-installation workarounds
+    react_native_post_install(installer)
+    
+    # Architecture specific settings
     installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |build_config|
-        build_config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      target.build_configurations.each do |config|
+        # Ensure proper deployment targets
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
+        
+        # Fix architecture issues - this is crucial for simulator build issues
+        if installer_arm64
+          # Building on Apple Silicon Mac
+          config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386 x86_64'
+          config.build_settings["EXCLUDED_ARCHS[sdk=iphoneos*]"] = "armv7"
+        else
+          # Building on Intel Mac
+          config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386 arm64'
+          config.build_settings["EXCLUDED_ARCHS[sdk=iphoneos*]"] = "armv7"
+        end
+        
+        # Make sure all pods build with the same deployment target
+        if config.build_settings['WRAPPER_EXTENSION'] == 'bundle'
+          config.build_settings['DEVELOPMENT_TEAM'] = '${DEVELOPMENT_TEAM}'
+        end
       end
     end
   end

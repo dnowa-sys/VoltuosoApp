@@ -1,0 +1,6 @@
+module Pods_VoltuosoApp {
+  umbrella header "Pods-VoltuosoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
